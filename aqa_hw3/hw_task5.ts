@@ -13,6 +13,7 @@ const marine = 'морпех';
 const ice = 'наледь';
 const across = 'попрек';
 const chopping = 'рубило';
-//console.log(access, marine, ice, across, chopping .length);
-//let lengthWords =
-//// как?
+console.log(access.length + marine.length + ice.length + across.length + chopping .length);
+console.log((access+marine+ice+across+chopping).length)
+let lengthWords =(access+marine+ice+across+chopping)
+console.log(lengthWords.length)
