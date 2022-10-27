@@ -6,4 +6,5 @@
 const qwe = 5.789987;
 console.log(Math.floor(qwe))
 console.log(Math.ceil(qwe))
+console.log(Math.round(qwe))
 
