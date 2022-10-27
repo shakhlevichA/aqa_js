@@ -5,13 +5,19 @@
 var readline = require('readline-sync');
 var enter = readline.question("What's your name?")
 let userName = enter 
-for(let i =0; i<5; i++)
-console.log('Привет', userName)
-//console.log('Привет', userName.toLowerCase())
-//console.log('Привет', userName.toUpperCase())
+let nameArr = enter.split(' ')
+let firstName = nameArr[0]
+let lastName = nameArr[1]
+console.log('Привет', firstName.toLowerCase(), lastName.toUpperCase())
+console.log('Привет', firstName, lastName.toUpperCase())
+console.log('Привет', firstName.toUpperCase(), lastName)
 
 
-// Последнее условие я не понял. Что нужно использовать
-// и не понятно как можно использовать для каждого варианта разные регистры
-// я знаю два. ВЕРХНИЙ и нижний, нагуглил что бывает ещё средний. Но мне кажется что ты имел ввиду что то другое.
-//хочу наглядный пример решения!))
+var readline = require('readline-sync');
+var enter = readline.question("What's your name? :")
+let userName = enter
+console.log('Hallo', userName);
+console.log('Hallo', userName.toLowerCase());
+console.log('Hallo',userName.toLowerCase());
+console.log('Hallo',userName.toUpperCase())
+console.log('Hallo',userName.toUpperCase())
