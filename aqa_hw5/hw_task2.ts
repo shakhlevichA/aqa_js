@@ -8,6 +8,12 @@
 //+ количество лет — 5.
 
 function overpayment(creditSum: number ){
-console.log(creditSum * 0.17 * 5 )
+    const yearsCount = 5;
+   let overpay = 0;
+ for(let i = 0, yearPay = creditSum/yearsCount;i < yearsCount;i++) {
+  overpay += creditSum * 0.17;
+  creditSum -= yearPay;
+  return overpay
 }
-overpayment(1000)
+}
+console.log(overpayment(1000))
