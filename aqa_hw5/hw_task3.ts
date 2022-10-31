@@ -8,7 +8,8 @@
 //После вызова функция должна вернуть переданную строку
 // обрезанную по значениям от и по
 
-function trimString(str: string, valueFrom: number, valueBy: number): void{
-    console.log( str.substring(valueFrom,valueBy))
+function trimString(str: string, valueFrom: number, valueBy: number){
+    return str.substring(valueFrom,valueBy)
+    
 }
-trimString('qwer qwwer qwer qwer', 3, 12)
+console.log(trimString('qwer qwwer qwer qwer', 3, 12))
