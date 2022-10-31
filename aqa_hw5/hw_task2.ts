@@ -7,7 +7,18 @@
 //+ процентная ставка в год — 17%,
 //+ количество лет — 5.
 
-function overpayment(creditSum: number ){
+function overpayment1(creditSum: number ){
 console.log(creditSum * 0.17 * 5 )
 }
-overpayment(1000)
+overpayment1(1000)
+
+function overpayment(creditSum: number ){
+    const yearsCount = 5;
+   let overpay = 0;
+ for(let i = 0, yearPay = creditSum/yearsCount;i < yearsCount;i++) {
+  overpay += creditSum * 0.17;
+  creditSum -= yearPay;
+  return overpay
+}
+}
+console.log(overpayment(1000))
