@@ -16,4 +16,4 @@ function overpayment(creditSum: number ){
   return overpay
 }
 }
-console.log(overpayment(1000))
+console.log(overpayment(1000)) 
