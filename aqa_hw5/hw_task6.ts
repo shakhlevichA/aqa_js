@@ -9,7 +9,16 @@
 //запускаем функцию **foo** иначе **boo**
 
 
-function fooBoo(bool: boolean, foo: string ){
+function fooBoo(bool: boolean, foo: () => void, boo: () => void){
+bool ? foo() : boo();
 }
+function foo() {
+console.log(foo.name)
+}
+function boo() {
+console.log(boo.name)
+}
+//fooBoo(true, foo, boo);
+fooBoo(false, foo, boo);
 
 
