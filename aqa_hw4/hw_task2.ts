@@ -5,7 +5,13 @@
 
 
 
-const str = 'я учу typescript!'
-if(str.includes('учу')){
-    console.log('учу')
-}else{console.log('Данной подстроки нет')}
+function overpayment(creditSum: number ){
+    const yearsCount = 5;
+   let overpay = 0;
+ for(let i = 0, yearPay = creditSum/yearsCount;i < yearsCount;i++) {
+  overpay += creditSum * 0.17;
+  creditSum -= yearPay;
+  return overpay
+}
+}
+console.log(overpayment(1000))
